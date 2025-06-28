@@ -1,0 +1,126 @@
+/* Fuente moderna y márgenes */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f2f4f8;
+    margin: 40px auto;
+    max-width: 700px;
+    padding: 20px;
+    color: #333;
+    line-height: 1.6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    animation: fadeIn 1s ease;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+    text-align: center;
+    color: #4a148c;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Select y inputs */
+select, input[type="number"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border 0.3s ease;
+}
+
+select:focus, input[type="number"]:focus, textarea:focus {
+    border-color: #7b1fa2;
+    outline: none;
+}
+
+/* Criterios */
+.criterio {
+    margin-bottom: 20px;
+}
+
+/* Botón principal */
+button[type="submit"] {
+    background-color: #7b1fa2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+}
+
+button[type="submit"]:hover {
+    background-color: #6a1b9a;
+    transform: translateY(-2px);
+}
+
+/* Mensajes */
+.mensaje {
+    padding: 12px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    animation: fadeInDown 0.5s ease;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.mensaje-ok {
+    background-color: #e0f7e9;
+    color: #2e7d32;
+    border: 1px solid #81c784;
+}
+
+.mensaje-error {
+    background-color: #fdecea;
+    color: #c62828;
+    border: 1px solid #ef9a9a;
+}
+
+/* Cerrar sesión */
+.cerrar-sesion {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: #c62828;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cerrar-sesion:hover {
+    background-color: #b71c1c;
+}

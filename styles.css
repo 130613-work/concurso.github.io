@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Waltograph';
+    src: url('fonts/WaltographUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #6a1b9a, #9c27b0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-top: -60px;
+    margin-bottom: 70px;
+    font-size: 2.8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: 'Waltograph', cursive;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-5px);
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #9c27b0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6a1b9a;
+    box-shadow: 0 0 8px rgba(106, 27, 154, 0.5);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #9c27b0;
+    transform: scale(1.02);
+}
+
+button:active {
+    transform: scale(0.98);
+} 
+.error {
+    color: #d32f2f;
+    font-size: 0.95em;
+}
+
+.arriba-boton {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.campo-password {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.campo-password input {
+    width: 100%;
+    padding-right: 40px; /* espacio para el icono */
+    box-sizing: border-box;
+    height: 45px;          /* Aumenta de 35px a 45px */
+    font-size: 1.1em;      /* Aumenta el tamaño de la fuente */
+}
+
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #888;
+}
